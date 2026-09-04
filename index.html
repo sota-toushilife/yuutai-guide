@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>優待生活デビュー完全攻略ガイド</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, 'Hiragino Sans', sans-serif;
+      background: #f5f7fa;
+      color: #1a1a2e;
+      line-height: 1.7;
+    }
+    .hero {
+      background: linear-gradient(90deg, #059669, #10b981);
+      color: white;
+      padding: 40px 20px 36px;
+      text-align: center;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .hero-tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-size: 21px;
+      font-weight: 900;
+      line-height: 1.45;
+      margin-bottom: 10px;
+    }
+    .hero h1 span { color: #fbbf24; }
+    .hero-sub {
+      font-size: 13px;
+      color: rgba(255,255,255,0.85);
+    }
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 0 16px 60px;
+    }
+    .section {
+      background: white;
+      border-radius: 16px;
+      padding: 24px 20px;
+      margin-top: 20px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .section-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: #888;
+      margin-bottom: 8px;
+    }
+    .section-title {
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 16px;
+      line-height: 1.4;
+    }
+    p { font-size: 14px; color: #333; margin-bottom: 12px; }
+
+    .step-card {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 18px;
+    }
+    .step-num {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #059669, #10b981);
+      color: white;
+      font-size: 16px;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .step-body { flex: 1; }
+    .step-body strong { font-size: 15px; font-weight: 800; display: block; margin-bottom: 4px; }
+    .step-body p { font-size: 13px; margin: 0; }
+
+    .highlight {
+      background: #f0faf4;
+      border: 1.5px solid #10b981;
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: 13px;
+      margin: 12px 0;
+      color: #333;
+    }
+    .highlight strong { color: #059669; display: block; margin-bottom: 4px; font-size: 14px; }
+
+    .op-card {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      border-left: 4px solid #10b981;
+    }
+    .op-card .op-title { font-size: 14px; font-weight: 800; margin-bottom: 6px; }
+    .op-card p { font-size: 13px; margin: 0; }
+
+    .caution-box {
+      background: #fff8f0;
+      border-left: 4px solid #ff6b35;
+      border-radius: 0 12px 12px 0;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+    }
+    .caution-box .caution-title { font-size: 14px; font-weight: 800; color: #e85d04; margin-bottom: 6px; }
+    .caution-box p { font-size: 13px; margin: 0; }
+
+    .cta-section {
+      background: linear-gradient(90deg, #059669, #10b981);
+      border-radius: 20px;
+      padding: 32px 20px;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .cta-section h2 {
+      color: white;
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+    .cta-section h2 span { color: #fbbf24; }
+    .cta-section p {
+      color: rgba(255,255,255,0.85);
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+    .cta-btn {
+      display: block;
+      background: white;
+      color: #059669;
+      font-size: 16px;
+      font-weight: 900;
+      padding: 18px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-tag">🎁 無料プレゼント</div>
+  <h1><span>10万円</span>から始める<br>優待生活デビュー<br>完全攻略ガイド</h1>
+  <p class="hero-sub">口座開設〜銘柄選び〜優待の受け取りまで全部解説</p>
+</div>
+
+<div class="container">
+
+  <!-- STEP1 口座開設 -->
+  <div class="section">
+    <div class="section-label">📋 STEP 1</div>
+    <div class="section-title">まず楽天証券で<br>口座を開設する</div>
+    <p>株主優待を受け取るには証券口座が必要。初心者には楽天証券がおすすめ。アプリも使いやすく、手数料も安い。</p>
+
+    <div class="step-card">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <strong>楽天証券の公式サイトで申し込む</strong>
+        <p>「口座開設」ボタンから申し込み。メールアドレスと本人確認書類（マイナンバーカードか運転免許証）があればOK。</p>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <strong>NISA口座も同時に申し込む</strong>
+        <p>株主優待はNISA口座でも買える。NISA口座なら売却益が非課税になるのでセットで申し込もう。</p>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <strong>入金して取引開始</strong>
+        <p>銀行口座から証券口座に入金。楽天銀行からなら即時入金できる。10万円入金して準備完了。</p>
+      </div>
+    </div>
+
+    <div class="highlight">
+      💡 口座開設は最短5分で申し込み完了。審査は通常1〜3営業日。
+    </div>
+  </div>
+
+  <!-- STEP2 銘柄の選び方 -->
+  <div class="section">
+    <div class="section-label">🔍 STEP 2</div>
+    <div class="section-title">銘柄の選び方<br>みんかぶで検索する</div>
+    <p>株主優待の銘柄探しには <strong>みんかぶ（minkabu.jp）</strong> が便利。優待の内容・必要な金額・権利確定月でまとめて絞り込める。</p>
+
+    <div class="op-card">
+      <div class="op-title">🌐 みんかぶの使い方</div>
+      <p>①「みんかぶ 株主優待」で検索 → ②「優待を探す」から条件を絞り込む → ③「優待金額」「最低投資額」「権利確定月」でフィルターをかける</p>
+    </div>
+
+    <div class="highlight">
+      <strong>10万円以下で始められる優待銘柄の例</strong>
+      武田薬品（4502）/ クリエイト・レストランツ（3387）/ SBIホールディングス（8473）/ ドン・キホーテ（7532）など
+    </div>
+
+    <p>優待の内容は「QUOカード」「食事券」「自社ポイント」などさまざま。自分が使いやすいものを選ぼう。</p>
+  </div>
+
+  <!-- STEP3 楽天証券での買い方 -->
+  <div class="section">
+    <div class="section-label">📱 STEP 3</div>
+    <div class="section-title">楽天証券アプリで<br>株を買う</div>
+
+    <div class="step-card">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <strong>iSPEEDアプリを開いて銘柄コードで検索</strong>
+        <p>楽天証券の取引アプリ「iSPEED」を開き、上部の検索窓に証券コード（例：7532）を入力して検索。</p>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <strong>「買う」ボタンをタップ</strong>
+        <p>銘柄ページを開いたら「買う」ボタンをタップ。「成行」か「指値」を選ぶ。初心者は成行（今の値段で買う）でOK。</p>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <strong>100株単位で注文する</strong>
+        <p>日本株は基本的に100株単位。注文画面で「100株」と入力して注文確定。</p>
+      </div>
+    </div>
+
+    <div class="caution-box">
+      <div class="caution-title">⚠️ 権利確定日に注意！</div>
+      <p>優待をもらうには「権利確定日」の2営業日前（権利付最終日）までに株を持っている必要がある。みんかぶで権利確定月を事前に確認しよう。</p>
+    </div>
+  </div>
+
+  <!-- STEP4 受け取り方 -->
+  <div class="section">
+    <div class="section-label">🎁 STEP 4</div>
+    <div class="section-title">優待の受け取り方</div>
+
+    <div class="step-card">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <strong>権利確定後、1〜3ヶ月で届く</strong>
+        <p>権利確定日から通常1〜3ヶ月後に自宅に郵送か、証券会社経由で届く。</p>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <strong>QUOカードはそのまま使える</strong>
+        <p>コンビニ・ドラッグストア・ガソリンスタンドなど全国の加盟店で使える。現金と同じ感覚でOK。</p>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <strong>食事券・ポイントも活用しよう</strong>
+        <p>外食チェーンの食事券は期限があるので早めに使おう。アプリポイントはスマホで受け取れて便利。</p>
+      </div>
+    </div>
+
+    <div class="highlight">
+      💡 優待をもらった後も株を持ち続けていれば、次の権利確定日にも優待がもらえる。年1〜4回もらえる銘柄もある。
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <h2><span>NISA口座の開設</span>から<br>一緒に始めませんか？</h2>
+    <p>わからないことはLINEで気軽に聞いてね。口座開設のサポートもします。</p>
+    <a href="https://j5hfzu1m.autosns.app/line" class="cta-btn" target="_blank">
+      📲 公式LINEでそうたに聞いてみる！
+    </a>
+  </div>
+
+</div>
+</body>
+</html>
